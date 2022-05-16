@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Tinkoff</title>
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper f-center">
+                    <div class="header-toggle">
+                        <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.8" x2="22" y2="1.8" stroke="white" stroke-width="2.4"/>
+                            <line y1="9.8" x2="22" y2="9.8" stroke="white" stroke-width="2.4"/>
+                            <line y1="17.8" x2="22" y2="17.8" stroke="white" stroke-width="2.4"/>
+                        </svg>
+                    </div>
+                    <a href="/" class="header-logo">
+                        <img src="img/logo.png" alt="" class="header-logo__image">
+                    </a>
+                    <nav class="header-nav">
+                        <ul class="header-menu f-center">
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link header-menu__link_accent f-center">
+                                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.23 6.07C20.02 5.27 19.19 4.79 18.39 5.01L13.08 6.43L6.18 0L4.25 0.51L8.39 7.68L3.42 9.01L1.45 7.47L0 7.86L2.59 12.35L19.16 7.92C19.97 7.69 20.44 6.87 20.23 6.07Z" fill="#EDF1F5"/>
+                                    </svg>
+                                    Купить билет
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link f-center">
+                                    Сервисы и услуги
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link f-center">
+                                    Информация
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link f-center">
+                                    Для бизнеса
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <!-- search -->
+            <section class="search">
+                <div class="container">
+                    <div class="search-block">
+                        <div class="search-block__offer">
+                            <h1 class="search-block__title">
+                                Поиск дешевых авиабилетов
+                            </h1>
+                            <p class="search-block__subtitle">
+                                Легкий способ купить авиабилеты дешево
+                            </p>
+                        </div>
+                        <form action="#" class="search-form f-center">
+                            <div class="search-form__city f-center">
+                                <div class="search-form__input">
+                                    <input type="text" name="city-start" value="Прага">
+                                    <span class="search-form__point">
+                                        Откуда
+                                    </span>
+                                </div>
+                                <div class="search-form__swap">
+                                    <img src="img/city-arrows.svg" alt="">
+                                </div>
+                                <div class="search-form__input">
+                                    <input type="text" name="city-end" placeholder="Куда">
+                                </div>
+                            </div>
+                            <div class="search-form__date f-center">
+                                <div class="search-form__input">
+                                    <input type="date" name="date-start" placeholder="Когда">
+                                    <span class="search-form__point">
+                                        Когда
+                                    </span>
+                                </div>
+                                <div class="search-form__input">
+                                    <input type="date" name="date-end" placeholder="Когда">
+                                    <span class="search-form__point">
+                                        Обратно
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="search-form__people">
+                                <div class="main-people">
+                                    <div class="main-people__count">
+                                        <span class="main-people__text f-center data-js">
+                                            <div class="main-people__inner">
+                                                1 Пассажир
+                                                <span class="main-people__span">
+                                                    Эконом
+                                                </span>
+                                            </div>
+                                        </span>
+                                        <div class="main-people__block">
+                                            <div class="main-data">
+                                                <div class="main-data__item f-center-jcsb">
+                                                    <div class="main-data__offer">
+                                                        <div class="main-data__point">
+                                                            Взрослые
+                                                        </div>
+                                                        <p class="main-data__warn">
+                                                            Старше 12 лет
+                                                        </p>
+                                                    </div>
+                                                    <div class="main-data__counter f-center">
+                                                        <button type="button" class="main-data__btn count-minus f-center-center">
+                                                            <img src="img/count-minus.svg" alt="">
+                                                        </button>
+                                                        <input type="text" name="count" class="main-data__input" readonly value="1">
+                                                        <button type="button" class="main-data__btn count-plus f-center-center">
+                                                            <img src="img/count-plus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="main-data__item f-center-jcsb">
+                                                    <div class="main-data__offer">
+                                                        <div class="main-data__point">
+                                                            Дети
+                                                        </div>
+                                                        <p class="main-data__warn">
+                                                            От 2 до 12 лет
+                                                        </p>
+                                                    </div>
+                                                    <div class="main-data__counter f-center">
+                                                        <button type="button" class="main-data__btn count-minus f-center-center">
+                                                            <img src="img/count-minus.svg" alt="">
+                                                        </button>
+                                                        <input type="text" name="count" class="main-data__input" readonly value="1">
+                                                        <button type="button" class="main-data__btn count-plus f-center-center">
+                                                            <img src="img/count-plus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="main-data__item f-center-jcsb">
+                                                    <div class="main-data__offer">
+                                                        <div class="main-data__point">
+                                                            Младенцы
+                                                        </div>
+                                                        <p class="main-data__warn">
+                                                            До 2 лет,без места
+                                                        </p>
+                                                    </div>
+                                                    <div class="main-data__counter f-center">
+                                                        <button type="button" class="main-data__btn count-minus f-center-center">
+                                                            <img src="img/count-minus.svg" alt="">
+                                                        </button>
+                                                        <input type="text" name="count" class="main-data__input" readonly value="1">
+                                                        <button type="button" class="main-data__btn count-plus f-center-center">
+                                                            <img src="img/count-plus.svg" alt="">
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="main-checkbox">
+                                                <div class="aside_toggle">
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="count_1">
+                                                        <label for="count_1">Эконом</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="count_2">
+                                                        <label for="count_2">Комфорт</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="count_3">
+                                                        <label for="count_3">Бизнес</label>
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <input type="checkbox" id="count_4">
+                                                        <label for="count_4">Первый класс</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <span class="search-form__point">
+                                    Пассажиры и класс
+                                </span>
+                            </div>
+                            <button type="submit" class="search-form__btn">
+                                Найти билеты
+                            </button>
+                        </form>
+                        <div class="search-price">
+                            <div class="search-price__title">
+                                Лучшие цены
+                            </div>
+                            <div class="search-price__offer f-center-jcsb">
+                                <div class="search-price__wrap f-center">
+                                    <p class="search-price__value">
+                                        4444 ₽ 
+                                    </p>
+                                    <p class="search-price__time">
+                                        Найдено 3 часа назад
+                                    </p>
+                                </div>
+                                <p class="search-price__info">
+                                    Без пересадок
+                                </p>
+                                <span class="search-price__accent">
+                                    Самый дешевый
+                                </span>
+                            </div>
+                        </div>
+                        <a href="#" class="search-block__submit f-center-center">
+                            Показать все билеты
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- credits -->
+            <footer class="credits">
+                <div class="container">
+                    <div class="credits-wrapper f-jcsb">
+                        <div class="credits-item">
+                            <div class="credits-item__point">
+                                Контакты
+                            </div>
+                            <div class="credits-item__phone f-center">
+                                <div class="credits-item__type">
+                                    *555
+                                </div>
+                                <div class="credits-item__icon">
+                                    <img src="img/phone-image.svg" alt="">
+                                </div>
+                                <p class="credits-item__text">
+                                    МТС,Мегафон,Билайн,Теле 2(С мобильного бесплатно)
+                                </p>
+                            </div>
+                            <div class="credits-offer">
+                                <div class="credits-offer__item f-center">
+                                    <a href="#" class="credits-offer__link">
+                                        8 800 444 55 55
+                                    </a>
+                                    <p class="credits-offer__text">
+                                        бесплатно по России
+                                    </p>
+                                </div>
+                                <div class="credits-offer__item f-center">
+                                    <a href="#" class="credits-offer__link">
+                                        +7 495 223 55 55
+                                    </a>
+                                    <p class="credits-offer__text">
+                                        для Москвы
+                                    </p>
+                                </div>
+                                <p class="credits-offer__text">
+                                    Бесплатные телефоны по всему миру<br><br>
+                                    Обратная связь
+                                </p>
+                            </div>
+                            <a href="#" class="credits-item__btn">
+                                Позвонить с сайта
+                            </a>
+                        </div>
+                        <div class="credits-item">
+                            <div class="credits-item__point">
+                                Компания
+                            </div>
+                            <ul class="credits-menu">
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Работа в Аэрофлоте
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Политика конфидицальности
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Противодействие коррупции
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Карта сайта
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="credits-item">
+                            <div class="credits-item__point">
+                                Партнерам
+                            </div>
+                            <ul class="credits-menu">
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Агентам
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Грузовые перевозки
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Группа Аэрофлот
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Акционерам и инвесторам
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Годовое общее собрание акционеров ПАО<br>“Аэрофлот” 28.06.2021
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Раскрытие информации для инвесторов и <br>акционеров в сети Интернет
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="credits-bottom">
+                        <div class="credits-download f-center">
+                            <a href="#" class="credits-download__item">
+                                <img src="img/app-download.png" alt="">
+                            </a>
+                            <a href="#" class="credits-download__item">
+                                <img src="img/play-download.png" alt="">
+                            </a>
+                            <a href="#" class="credits-download__item">
+                                <img src="img/gallery-download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="credits-bottom__offer">
+                            <ul class="credits-social f-center">
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/vk-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/fb-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/insta-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/twitter-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/youtube-icon.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="credits-politic">
+                                ©Авиакомпания “Аэрофлот”<br>
+                                2008-2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

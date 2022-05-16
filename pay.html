@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Tinkoff</title>
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/fonts.css" />
+        <link rel="stylesheet" href="css/intlTelInput.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/rangeable@latest/dist/rangeable.min.css">
+        <link rel="stylesheet" href="css/style.css" />
+        
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header">
+            <div class="container">
+                <div class="header-wrapper f-center">
+                    <div class="header-toggle">
+                        <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line y1="1.8" x2="22" y2="1.8" stroke="white" stroke-width="2.4"/>
+                            <line y1="9.8" x2="22" y2="9.8" stroke="white" stroke-width="2.4"/>
+                            <line y1="17.8" x2="22" y2="17.8" stroke="white" stroke-width="2.4"/>
+                        </svg>
+                    </div>
+                    <a href="/" class="header-logo">
+                        <img src="img/logo.png" alt="" class="header-logo__image">
+                    </a>
+                    <nav class="header-nav">
+                        <ul class="header-menu f-center">
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link header-menu__link_accent f-center">
+                                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.23 6.07C20.02 5.27 19.19 4.79 18.39 5.01L13.08 6.43L6.18 0L4.25 0.51L8.39 7.68L3.42 9.01L1.45 7.47L0 7.86L2.59 12.35L19.16 7.92C19.97 7.69 20.44 6.87 20.23 6.07Z" fill="#EDF1F5"/>
+                                    </svg>
+                                    Купить билет
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link f-center">
+                                    Сервисы и услуги
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link f-center">
+                                    Информация
+                                </a>
+                            </li>
+                            <li class="header-menu__item">
+                                <a href="#" class="header-menu__link f-center">
+                                    Для бизнеса
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- main -->
+        <main>
+            <!-- pay -->
+            <section class="pay">
+                <div class="container">
+                    <div class="pay-info">
+                        <div class="pay-progress f-center">
+                            <div class="pay-progress__item f-center">
+                                <span class="pay-progress__count f-center-center">
+                                    1
+                                </span>
+                                <p class="pay-progress__point">
+                                    Поиск
+                                </p>
+                            </div>
+                            <div class="pay-progress__item f-center">
+                                <span class="pay-progress__count f-center-center">
+                                    2
+                                </span>
+                                <p class="pay-progress__point">
+                                    Результаты
+                                </p>
+                            </div>
+                            <div class="pay-progress__item f-center">
+                                <span class="pay-progress__count f-center-center">
+                                    3
+                                </span>
+                                <p class="pay-progress__point">
+                                    Бронирование
+                                </p>
+                            </div>
+                            <div class="pay-progress__item f-center">
+                                <span class="pay-progress__count f-center-center">
+                                    4
+                                </span>
+                                <p class="pay-progress__point">
+                                    Оплата
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pay-details f-center">
+                            <div class="pay-details__timeline main_inner">
+                                <div class="timeline">
+                                    <div class="from">
+                                        <span class="time"><img src="img/plane.svg" alt="plane"> 13:00</span>
+                                        <span class="undertext">Москва (VKO)</span>
+                                    </div>
+                                    <span class="line"></span>
+                                    <div class="inroad">
+                                        <p class="undertext">5 ч 15 мин в пути</p>
+                                        <span class="race">через Амстердам (AMS)</span>
+                                    </div>
+                                    <span class="line"></span>
+                                    <div class="to">
+                                        <span class="time"><img src="img/plane.svg" alt="plane"> 15:15</span>
+                                        <span class="undertext">Сочи (AER)</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pay-details__block">
+                                <div class="pay-details__name">
+                                    PC-2026
+                                </div>
+                                <p class="pay-details__company">
+                                    Pegasus
+                                </p>
+                            </div>
+                            <div class="pay-details__type f-center">
+                                <img src="img/briefcase.png" alt="">
+                                <p class="pay-details__text">
+                                    Эконом
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <form action="#" class="pay-booking">
+                        <div class="pay-booking__item">
+                            <div class="pay-booking__point">
+                                Бронирование билета
+                            </div>
+                            <div class="pay-booking__row flex">
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Электронная почта
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="email" name="email" placeholder="user@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Электронная почта
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="tel" name="phone" placeholder="user@example.com" id="phone-country" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="pay-booking__warn">
+                                Контактный e-mail нужен для отправки данных о бронировании,телефон требуется для срочных оповещений в случае любых изменений
+                            </p>
+                        </div>
+                        <div class="pay-booking__item">
+                            <div class="pay-booking__point">
+                                Введите данные пассажира
+                            </div>
+                            <p class="pay-booking__people">
+                                Взрослый
+                            </p>
+                            <div class="pay-booking__row pay-booking__row_document flex">
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Гражданство
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="text" name="country" placeholder="Россия" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Тип документа
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="text" name="document" placeholder="Загран.паспорт" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        № документа
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="text" name="id" placeholder="Как в документе" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Действителен до
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="date" name="passport" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Фамилия
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="text" name="surname" placeholder="Латинскими буквами" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Имя
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="text" name="name" placeholder="Латинскими буквами" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Дата рождения
+                                    </label>
+                                    <div class="pay-booking__input">
+                                        <input type="date" name="date" required>
+                                    </div>
+                                </div>
+                                <div class="pay-booking__offer">
+                                    <label for="" class="pay-booking__title">
+                                        Пол
+                                    </label>
+                                    <div class="pay-booking__inner radio-wrapper f-center">
+                                        <div class="pay-booking__radio radio-item f-center-center">
+                                            <input type="radio" name="sex">
+                                            <img src="img/man.png" alt="">
+                                        </div>
+                                        <div class="pay-booking__radio radio-item f-center-center">
+                                            <input type="radio" name="sex">
+                                            <img src="img/girl.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="pay-total f-center-jcsb">
+                        <div class="pay-total__price f-center">
+                            Общая стоимость
+                            <span class="pay-total__accent">
+                                4412 руб
+                            </span>
+                        </div>
+                        <button type="button" class="pay-total__btn">
+                            Бронировать и перейти к оплате
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- credits -->
+            <footer class="credits">
+                <div class="container">
+                    <div class="credits-wrapper f-jcsb">
+                        <div class="credits-item">
+                            <div class="credits-item__point">
+                                Контакты
+                            </div>
+                            <div class="credits-item__phone f-center">
+                                <div class="credits-item__type">
+                                    *555
+                                </div>
+                                <div class="credits-item__icon">
+                                    <img src="img/phone-image.svg" alt="">
+                                </div>
+                                <p class="credits-item__text">
+                                    МТС,Мегафон,Билайн,Теле 2(С мобильного бесплатно)
+                                </p>
+                            </div>
+                            <div class="credits-offer">
+                                <div class="credits-offer__item f-center">
+                                    <a href="#" class="credits-offer__link">
+                                        8 800 444 55 55
+                                    </a>
+                                    <p class="credits-offer__text">
+                                        бесплатно по России
+                                    </p>
+                                </div>
+                                <div class="credits-offer__item f-center">
+                                    <a href="#" class="credits-offer__link">
+                                        +7 495 223 55 55
+                                    </a>
+                                    <p class="credits-offer__text">
+                                        для Москвы
+                                    </p>
+                                </div>
+                                <p class="credits-offer__text">
+                                    Бесплатные телефоны по всему миру<br><br>
+                                    Обратная связь
+                                </p>
+                            </div>
+                            <a href="#" class="credits-item__btn">
+                                Позвонить с сайта
+                            </a>
+                        </div>
+                        <div class="credits-item">
+                            <div class="credits-item__point">
+                                Компания
+                            </div>
+                            <ul class="credits-menu">
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Работа в Аэрофлоте
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Политика конфидицальности
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Противодействие коррупции
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Карта сайта
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="credits-item">
+                            <div class="credits-item__point">
+                                Партнерам
+                            </div>
+                            <ul class="credits-menu">
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Агентам
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Грузовые перевозки
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Группа Аэрофлот
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Акционерам и инвесторам
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Годовое общее собрание акционеров ПАО<br>“Аэрофлот” 28.06.2021
+                                    </a>
+                                </li>
+                                <li class="credits-menu__item">
+                                    <a href="#" class="credits-menu__link">
+                                        Раскрытие информации для инвесторов и <br>акционеров в сети Интернет
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="credits-bottom">
+                        <div class="credits-download f-center">
+                            <a href="#" class="credits-download__item">
+                                <img src="img/app-download.png" alt="">
+                            </a>
+                            <a href="#" class="credits-download__item">
+                                <img src="img/play-download.png" alt="">
+                            </a>
+                            <a href="#" class="credits-download__item">
+                                <img src="img/gallery-download.png" alt="">
+                            </a>
+                        </div>
+                        <div class="credits-bottom__offer">
+                            <ul class="credits-social f-center">
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/vk-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/fb-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/insta-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/twitter-icon.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="credits-social__item">
+                                    <a href="#" class="credits-social__link">
+                                        <img src="img/youtube-icon.png" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <p class="credits-politic">
+                                ©Авиакомпания “Аэрофлот”<br>
+                                2008-2022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://unpkg.com/rangeable@latest/dist/rangeable.min.js"></script>
+        <script src="js/intlTelInput.min.js"></script>
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
